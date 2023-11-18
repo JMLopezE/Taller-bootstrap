@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="Styles.css"/>
+        <title> E-commerce </title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                        <button class="navbar-toggler collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                                <img src="https://join.corporacionmultiferias.com/wp-content/uploads/2020/10/logo-navidad.png" class="img mx-auto"alt="Logo"/>
+
+                        <div class="navbar-collapse collapse" id="navbarTogglerDemo01">
+                                <a class="navbar-brand" href="#">Inicio</a>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#" >Productos</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                                <a class="nav-link" href="#">Servicios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link disabled" aria-disabled="true">Colecciones</a>
+                                        </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                        <input class="form-control me-2"type="search" placeholder="Search" aria-label="Search"/>
+                                        <button class="btn btn-outline-success" type="submit"> Search </button>
+                                </form>
+                        </div>
+                </div>
+        </nav>
+
+        <!-- Carrito de compras -->
+        <div class="p-3 m-0 border-0 bd-example m-0 border-0 position-end">
+                <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart3"></i>
+                        <li id="cart-icon">
+                                <span id="cart-count">0</span>
+                        </li>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                                
+                                <div id="cart" class="container mt-3">
+                                        <h2>Carro compras</h2>
+                                        <ul id="cart-items" class="list-group"></ul>
+                                        <p>Total: $ <span id="cart-total">0.00</span></p>
+                                        <button id="checkout-btn" class="btn btn-primary">Finalizar compra</button>
+                                        <a href="/formulario.html"> <button class="btn btn-primary">Formulario</button></a>
+                                </div>
+                                <!-- <section id="contenedor" class="contenedor_principal">
+                                        <button id="reset" class="resent_boton">RESET</button>
+                                        <button id="resta" class="resta_boton">-</button>
+                                        <button id="suma" class="suma_boton">+</button>
+                                        <p id="salida" class="salida_variable">0</p>
+                                        <a href="/Formulario.html"> <button class="btn btn-danger add-to-cart-btn">Realizar compra</button> </a>
+                                </section> -->
+                        </div>
+                </div>
+        </div>
+
+        <!-- Carrusel -->
+
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <img src="https://th.bing.com/th/id/R.0a73db245195022ad0232e955d6d1e8e?rik=zsI3zQwJDA7m7Q&riu=http%3a%2f%2f2.bp.blogspot.com%2f-12UP9II_ev0%2fUrbrr-BdI7I%2fAAAAAAAABsw%2fDlizrUoOGWI%2fs1600%2fNavidad1.jpg&ehk=Mp6w2KSSxC20lI%2bWrL%2b3yrOgqmep1PW07eq4p2Zj%2ft0%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100 rounded-pill" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                                <img src="https://th.bing.com/th/id/OIP.YFX7OfiYjDVMcMgP3Ohr7gHaEK?rs=1&pid=ImgDetMain" class="d-block w-100 rounded-pill" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                                <img src="https://th.bing.com/th/id/OIP.Y93kKa1as7KmcAmH669lCwHaEP?rs=1&pid=ImgDetMain" class="d-block w-100 rounded-pill" alt="...">
+                        </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <!-- Cartas de productos -->
+
+        <div class="container text-center">
+                <div class="row g-2">
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://th.bing.com/th/id/OIP.BIHjN7yp-z2aNmEukYgwWwAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="Arbolitos">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Arbolitos navideños</h5>
+                                                <p class="card-text">Precio: $110000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://www.arqhys.com/wp-content/fotos/2013/11/Decoraci%C3%B3n-con-guirnaldas-de-navidad...jpg" class="card-img-top" alt="Girnaldas">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Girnaldas</h5>
+                                                <p class="card-text">Precio: $65000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://th.bing.com/th/id/OIP.Kd5GLvNhNi1W3HYwgKmzpQHaFG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Bolitas">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Bolitas navideñas x24</h5>
+                                                <p class="card-text">Precio: $53000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://th.bing.com/th/id/R.ee7607ca56437ba1a72b0d653c05e2b5?rik=VJmlM3b3vkxF2Q&pid=ImgRaw&r=0" class="card-img-top" alt="Muñecos">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Muñecos navideños</h5>
+                                                <p class="card-text">Precio: $76000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://th.bing.com/th/id/R.dd6d8829d83b371144051920c0ab09f9?rik=pxe6Z9VrSiw70w&riu=http%3a%2f%2ffloricentro.mx%2fimages%2f20180706_171601.jpg%3fcrc%3d4199758093&ehk=HfDpwXZc1Foqinp88VrKacvYB7kyY8zULtQc4Rvf%2bh8%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Muñecos">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Muñecos árbol x3</h5>
+                                                <p class="card-text">Precio: $25000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4">
+                                <div class="p-3 border">
+                                        <img src="https://http2.mlstatic.com/D_NQ_NP_820669-MCO44146009841_112020-F.jpg" class="card-img-top" alt="Pesebre">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Pesebre</h5>
+                                                <p class="card-text">Precio: $20000</p>
+                                        <button class="btn btn-danger add-to-cart-btn" data-name="Computador" data-price="500000">Agregar al carrito</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+</body>
+</html>
